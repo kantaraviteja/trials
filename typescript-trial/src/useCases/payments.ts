@@ -12,6 +12,7 @@ router.post("/createTransaction",(req, res) => {
 
 function getPaymentGateway(name: string) {
     switch (name) {
+        
         case "stripe": 
             return stripe;
         default:
